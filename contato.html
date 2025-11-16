@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contato | EnerSmart Web</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<script>
+  document.getElementById("form-contato").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Simula envio e exibe confirmação
+    document.getElementById("confirmacao").style.display = "block";
+
+    // Opcional: limpar campos após envio
+    this.reset();
+  });
+</script>
+
+<body>
+  <header>
+ <div class="logo">
+  <a href="index.html">
+    <img src="img/Logo150.png" alt="Logo" />
+  </a>
+  <span class="logo-text">EnerSmart Web</span>
+</div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="calculadora.html">Calculadora</a>
+    </nav>
+  </header>
+
+<section class="contato">
+  <h2>📬 Fale com a gente</h2>
+  <p>Tem dúvidas, sugestões ou quer colaborar com o projeto? Envie sua mensagem abaixo:</p>
+
+  <form id="form-contato" class="form-contato">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+
+    <label for="assunto">Assunto:</label>
+    <input type="text" id="assunto" name="assunto" placeholder="Ex: Dúvida sobre consumo" required />
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+
+    <button type="submit">Enviar mensagem</button>
+    <p id="confirmacao" class="confirmacao" style="display:none;">✅ Mensagem enviada com sucesso!</p>
+  </form>
+</section>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="img/Logo150.png" alt="EnerSmart Logo" />
+      <h3>EnerSmart Web</h3>
+      <p>Economize energia com inteligência</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Links rápidos</h4>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="calculadora.html">Calculadora</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+
+ <div class="footer-social">
+        <h4>Conecte-se</h4>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 EnerSmart Web - Todos os direitos reservados</p>
+  </div>
+</footer>
+
